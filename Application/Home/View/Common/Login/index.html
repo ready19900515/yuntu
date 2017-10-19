@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P&A MG | Log in</title>
+
+    <link rel="stylesheet" href="__PUBLIC__/lib/bootstrap-3.3.5/css/bootstrap.css">
+
+    <script src="__PUBLIC__/lib/bootstrap-3.3.5/js/bootstrap.js"></script>
+    <script src="__PUBLIC__/lib/jQuery/jQuery-2.1.4.min.js"></script>
+</head>
+
+<style>
+    #main{
+        width:400px;
+        height:200px;
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin-left:-200px;
+        margin-top:-120px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="main">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form action="{:U('/Home/Common/Login/login')}" method="post">
+                            <div class="form-group" style="text-align:center">
+                                <h3><b>云图系统</b></h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">请登录</label>
+                                <input type="text"class="form-control" name="username" id="username" placeholder="账号">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="密码">
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" value="remember-me"> 记住我
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-large btn-primary" type="submit">登录</button>
+                                <label style="color:red;float:right"></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
